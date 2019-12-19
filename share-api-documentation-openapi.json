@@ -1,0 +1,680 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "SHARE API Documentation",
+        "description": "The SHARE API allows you to access all Research Release Events in the SHARE database and publish your organization's publications, data, repository holdings, or other research directly to SHARE.  The API has three endpoints.  \u201csearch,\u201d \u201cdata,\u201d and \u201cstats.\u201d  \u201csearch\u201d allows you to access information in SHARE, \u201cdata\u201d allows you to post to SHARE, and \u201cstats\u201d gives metrics on the different providers in SHARE.",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/osf.io\/api\/v1",
+        "http:\/\/staging.osf.io\/api\/v1"
+    ],
+    "paths": {
+        "\/share\/search": {
+            "get": {
+                "summary": "",
+                "description": "Normalized SHARE Data from all content providers",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Any valid Lucene query string matching the SHARE schema"
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "The starting index of the search. Indexing begins at 0.\nIf you set the size to 100, to page through the results,\nyou would increase your from by increments of 100. Defaults to 0.\n"
+                    },
+                    {
+                        "name": "size",
+                        "in": "query",
+                        "description": "Determines the number of results returned at a time. Defaults to 10."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Determines what value the results are sorted on.\nIf not provided, it defaults to sorting based on the relevance\nscore computed by Elasticsearch.\n"
+                    },
+                    {
+                        "name": "v",
+                        "in": "query",
+                        "description": "Version of the metadata to retrieve. v=1 will retrieve an older version of the metadata, which currently powers the SHARE Search page."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "search response",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/searchResults"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/share\/data": {
+            "post": {
+                "summary": "",
+                "description": "POST endpoint for sending pre-formatted data to SHARE. Requires an API key - contact us at share-support@osf.io for more information. Note: Data will appear here after being pushed, but will not appear in the SHARE search endpoint immediately. Once you've been established as a provider, the data will be pulled into the SHARE search API on a nightly basis.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "searchResults": {
+                "type": "object",
+                "properties": {
+                    "count": {
+                        "description": "The total number of results found for the current query.",
+                        "type": "integer"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "time": {
+                        "description": "The amount of time the search took to complete in seconds.",
+                        "type": "number"
+                    },
+                    "result": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "results": {
+                "type": "object"
+            },
+            "result": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "description": "This refers to the title, and any sub-titles,\nof the resource. The title should be represented using the original\nspelling and wording. If the resource really has no title, then this\nelement must still be supplied, though it may be empty\n",
+                        "type": "string"
+                    },
+                    "contributors": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "uris": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "description": {
+                        "description": "An abstract or general description of the resource.",
+                        "type": "string"
+                    },
+                    "tags": {
+                        "description": "Non-hierarchical terms or keywords assigned to an object to aid browsing or searching.",
+                        "type": "array"
+                    },
+                    "providerUpdatedDateTime": {
+                        "description": "The date and time the provider describing the object has been updated about either the creation or update of an object by its contributors. E.g., this may be the date a manuscript is published, but not necessarily the date the manuscript was written.",
+                        "type": "string"
+                    },
+                    "freeToRead": {
+                        "description": "A date range specifying when this research object will be free to read.",
+                        "type": "object"
+                    },
+                    "languages": {
+                        "description": "The primary languages in which the content of the resource is presented. Values used for this element MUST conform to ISO 639\u20133. This offers two and three letter tags e.g. \"en\" or \"eng\" for English and \"en-GB\" for English used in the UK.",
+                        "type": "array"
+                    },
+                    "licenses": {
+                        "description": "The licenses under which the research object is available",
+                        "type": "array"
+                    },
+                    "publisher": {
+                        "description": "This element contains the name of the entity, typically a 'publisher', responsible for making the version of record of the resource available. This could be a person, organisation or service",
+                        "type": "object"
+                    },
+                    "sponsorships": {
+                        "description": "Sponsorships associated with the array",
+                        "type": "array"
+                    },
+                    "version": {
+                        "description": "Infomation about this version of the object.",
+                        "type": "object"
+                    },
+                    "otherProperties": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "shareProperties": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "contributors": {
+                "type": "array"
+            },
+            "uris": {
+                "type": "object"
+            },
+            "tags": {
+                "type": "array"
+            },
+            "freeToRead": {
+                "type": "object",
+                "properties": {
+                    "startDate": {
+                        "description": "The start date of the license period. If the resource was always licensed this way, then this date can be the same as creationDate or the date \\0000-00-00\\",
+                        "type": "string "
+                    },
+                    "endDate": {
+                        "description": "The date on which this resource will no longer be licensed in this way.",
+                        "type": "string"
+                    }
+                }
+            },
+            "languages": {
+                "type": "array"
+            },
+            "licenses": {
+                "type": "array"
+            },
+            "publisher": {
+                "type": "object",
+                "properties": {
+                    "person": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "organization": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "sponsorships": {
+                "type": "array"
+            },
+            "version": {
+                "type": "object",
+                "properties": {
+                    "versionId": {
+                        "description": "The name or number representing this version of the object.",
+                        "type": "string"
+                    },
+                    "versionDateTime": {
+                        "description": "The date and time the object was created or updated by its contributors. If the data for the object describes the first version of that object, it will be the date and time of object creation, otherwise it will be considered the date and time the object was updated.",
+                        "type": "string"
+                    },
+                    "versionOf": {
+                        "description": "If the object is an update, the HTTP URI of the object the content is updating. Depending upon what the upate is relative to, that could be the object at creation or a previous version.",
+                        "type": "string"
+                    }
+                }
+            },
+            "otherProperties": {
+                "type": "object",
+                "properties": {
+                    "property1": {
+                        "description": "A property provided that does not fit into the main schema",
+                        "type": "string"
+                    },
+                    "property2": {
+                        "description": "Another property provided that does not fit the main schema",
+                        "type": "string"
+                    }
+                }
+            },
+            "shareProperties": {
+                "type": "object",
+                "properties": {
+                    "docID": {
+                        "description": "A unique identifier for the document.",
+                        "type": "string"
+                    }
+                }
+            },
+            "sponsorship": {
+                "type": "object",
+                "properties": {
+                    "award": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "sponsor": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "award": {
+                "type": "object",
+                "properties": {
+                    "awardName": {
+                        "description": "The textual representation of the award identifier, issued by the sponsor, that relates to the resource.",
+                        "type": "string"
+                    },
+                    "awardIdentifier": {
+                        "description": "An HTTP URI for the award, issued by the sponsor, that relates to the resource.",
+                        "type": "string"
+                    }
+                }
+            },
+            "sponsor": {
+                "type": "object",
+                "properties": {
+                    "sponsorName": {
+                        "description": "The name of the entity responsible for sponsoring the resource, recorded here as text.",
+                        "type": "string"
+                    },
+                    "sponsorIdentifier": {
+                        "description": "A globally unique identifier for the sponsor of the resource should be recorded here.",
+                        "type": "string"
+                    }
+                }
+            },
+            "license": {
+                "type": "object",
+                "properties": {
+                    "uri": {
+                        "description": "The HTTP URI of the license in effect during the period describe by this lincenseRef",
+                        "type": "string"
+                    },
+                    "startDate": {
+                        "description": "The start date of the license period. If the resource was always licensed this way, then this date can be the same as creationDate or the date \\0000-00-00\\",
+                        "type": "string "
+                    },
+                    "endDate": {
+                        "description": "The date on which this resource will no longer be licensed in this way.",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "An abstract or general description of the resource.",
+                        "type": "string"
+                    }
+                }
+            },
+            "person": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of the person. May be blank.",
+                        "type": "string"
+                    },
+                    "givenName": {
+                        "description": "The first name of the contributor.",
+                        "type": "string"
+                    },
+                    "familyName": {
+                        "description": "Also called the 'last name,' this element will be derived\nfrom the creator.name by SHARE if not supplied by the source.\n",
+                        "type": "string"
+                    },
+                    "additionalName": {
+                        "description": "Also called the \"middle name,\" this element will be\nderived from the creator.name by SHARE if not supplied by the source.\n",
+                        "type": "string"
+                    },
+                    "prefix": {
+                        "description": "The prefix of the contributor.",
+                        "type": "string"
+                    },
+                    "affiliation": {
+                        "description": "The organization(s) that this person is affiliated with. For example, a school\/university.",
+                        "type": "array"
+                    },
+                    "email": {
+                        "description": "An email address for this person",
+                        "type": "string"
+                    },
+                    "sameAs": {
+                        "description": "Identifiers that describe this person",
+                        "type": "array"
+                    }
+                }
+            },
+            "organization": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of the person. May be blank.",
+                        "type": "string"
+                    },
+                    "sameAs": {
+                        "description": "Identifiers that describe this person",
+                        "type": "array"
+                    },
+                    "email": {
+                        "description": "An email address for this person",
+                        "type": "string"
+                    }
+                }
+            },
+            "uri": {
+                "type": "object",
+                "properties": {
+                    "canonicalUri": {
+                        "description": "The preferred persistent HTTP URI that represents the research object. This should be repeated in exactly one other field in the uris object.",
+                        "type": "string"
+                    },
+                    "providerUris": {
+                        "description": "The persistent HTTP URI that points to the object's record at the SHARE provider regardless of format.",
+                        "type": "array"
+                    },
+                    "descriptorUris": {
+                        "description": "A persistent HTTP URI that points to a description of the research object.",
+                        "type": "array"
+                    },
+                    "objectUris": {
+                        "description": "A persistent HTTP URI that points directly to the research object.",
+                        "type": "array"
+                    }
+                }
+            },
+            "providerUris": {
+                "type": "array"
+            },
+            "descriptorUris": {
+                "type": "array"
+            },
+            "objectUris": {
+                "type": "array"
+            },
+            "affiliation": {
+                "type": "array"
+            },
+            "sameAs": {
+                "type": "array"
+            },
+            "stats": {
+                "type": "object",
+                "properties": {
+                    "raw_aggregations": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "charts": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "raw_aggregation": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "chart": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "raw_aggregations": {
+                "type": "object"
+            },
+            "charts": {
+                "type": "object"
+            },
+            "raw_aggregation": {
+                "type": "object",
+                "properties": {
+                    "sources": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "earlier_documents": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "doisMissing": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "date_chunks": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "dois": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "sourceComponents": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "aggregatedSourceComponents": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "date_chunk": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "sources": {
+                "type": "object"
+            },
+            "earlier_documents": {
+                "type": "object"
+            },
+            "doisMissing": {
+                "type": "object"
+            },
+            "date_chunks": {
+                "type": "object"
+            },
+            "dois": {
+                "type": "object"
+            },
+            "chart": {
+                "type": "object",
+                "properties": {
+                    "shareTimeGraph": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "shareDonutGraph": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "shareTimeGraphComponent": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "shareDonutGraphComponent": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "shareTimeGraph": {
+                "type": "object"
+            },
+            "shareDonutGraph": {
+                "type": "object"
+            },
+            "sourceComponents": {
+                "type": "object",
+                "properties": {
+                    "buckets": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "sum_other_doc_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "doc_count_error_upper_bound": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "buckets": {
+                "type": "array"
+            },
+            "bucket": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "description": "The official short name of each data source.",
+                        "type": "string"
+                    },
+                    "doc_count": {
+                        "description": "The total number of documents for that source.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "aggregatedSourceComponents": {
+                "type": "object",
+                "properties": {
+                    "sourceComponents": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "sources": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "doc_count": {
+                        "description": "The total number of documents for that source.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "date_chunk": {
+                "type": "object",
+                "properties": {
+                    "buckets": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "timeBuckets": {
+                "type": "object",
+                "properties": {
+                    "articles_over_time": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "key": {
+                        "description": "The official short name of each data source.",
+                        "type": "string"
+                    },
+                    "doc_count": {
+                        "description": "The total number of documents for that source.",
+                        "type": "integer"
+                    },
+                    "timeBucket": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "articles_over_time": {
+                "type": "object"
+            },
+            "timeBucket": {
+                "type": "object",
+                "properties": {
+                    "key_as_string": {
+                        "description": "The date for the time period represented as a string.",
+                        "type": "string"
+                    },
+                    "key": {
+                        "description": "The date for the time period represented as a string.",
+                        "type": "integer"
+                    },
+                    "doc_count": {
+                        "description": "The total number of documents for that source.",
+                        "type": "integer"
+                    }
+                }
+            },
+            "shareTimeGraphComponent": {
+                "type": "object",
+                "properties": {
+                    "x": {
+                        "description": "The label for the x axis.",
+                        "type": "string"
+                    },
+                    "colors": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "type": {
+                        "description": "T type of graph that C3 should render.",
+                        "type": "string"
+                    },
+                    "groups": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "columns": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "color": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "colors": {
+                "type": "object"
+            },
+            "groups": {
+                "type": "array"
+            },
+            "columns": {
+                "type": "array"
+            },
+            "color": {
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "description": "A hex color matched to each source in the graph.",
+                        "type": "string"
+                    }
+                }
+            },
+            "shareDonutGraphComponent": {
+                "type": "object",
+                "properties": {
+                    "color": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "colors": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "type": {
+                        "description": "T type of graph that C3 should render.",
+                        "type": "string"
+                    },
+                    "columns": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "errorModel": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
