@@ -1,0 +1,95 @@
+{
+    "id": "884dacfaa2417ef99214a65bc15ef5a5",
+    "name": "SHARE API Documentation",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "802845f61fa5a01a3111cd8c8137bf85",
+            "name": "",
+            "url": "http:\/\/staging.osf.io\/api\/v1\/share\/search",
+            "description": "Normalized SHARE Data from all content providers",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "Any valid Lucene query string matching the SHARE schema",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "The starting index of the search. Indexing begins at 0.\nIf you set the size to 100, to page through the results,\nyou would increase your from by increments of 100. Defaults to 0.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "Determines the number of results returned at a time. Defaults to 10.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Determines what value the results are sorted on.\nIf not provided, it defaults to sorting based on the relevance\nscore computed by Elasticsearch.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "v",
+                    "description": "Version of the metadata to retrieve. v=1 will retrieve an older version of the metadata, which currently powers the SHARE Search page.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "884dacfaa2417ef99214a65bc15ef5a5",
+            "rawModeData": ""
+        },
+        {
+            "id": "76e4f1dbb11ebaee027b09af60082902",
+            "name": "",
+            "url": "http:\/\/staging.osf.io\/api\/v1\/share\/data",
+            "description": "POST endpoint for sending pre-formatted data to SHARE. Requires an API key - contact us at share-support@osf.io for more information. Note: Data will appear here after being pushed, but will not appear in the SHARE search endpoint immediately. Once you've been established as a provider, the data will be pulled into the SHARE search API on a nightly basis.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "884dacfaa2417ef99214a65bc15ef5a5",
+            "rawModeData": ""
+        }
+    ]
+}
