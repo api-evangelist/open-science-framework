@@ -1,5 +1,5 @@
 {
-    "id": "884dacfaa2417ef99214a65bc15ef5a5",
+    "id": "63413c80c5e580f66f6456dd03dc018e",
     "name": "SHARE API Documentation",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "802845f61fa5a01a3111cd8c8137bf85",
+            "id": "6f76129e8f75d35bd4d8e795eadf0cc4",
             "name": "",
             "url": "http:\/\/staging.osf.io\/api\/v1\/share\/search",
             "description": "Normalized SHARE Data from all content providers",
@@ -65,11 +65,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "884dacfaa2417ef99214a65bc15ef5a5",
+            "collectionId": "63413c80c5e580f66f6456dd03dc018e",
             "rawModeData": ""
         },
         {
-            "id": "76e4f1dbb11ebaee027b09af60082902",
+            "id": "85a42308786e0f8064f2df70271966ca",
             "name": "",
             "url": "http:\/\/staging.osf.io\/api\/v1\/share\/data",
             "description": "POST endpoint for sending pre-formatted data to SHARE. Requires an API key - contact us at share-support@osf.io for more information. Note: Data will appear here after being pushed, but will not appear in the SHARE search endpoint immediately. Once you've been established as a provider, the data will be pulled into the SHARE search API on a nightly basis.",
@@ -88,7 +88,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "884dacfaa2417ef99214a65bc15ef5a5",
+            "collectionId": "63413c80c5e580f66f6456dd03dc018e",
             "rawModeData": ""
         }
     ]
