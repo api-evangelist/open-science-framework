@@ -1,5 +1,5 @@
 {
-    "id": "dc90f8906b5e299cf96707c727bdf25f",
+    "id": "5e0b2b645a80d29032bf12b889630541",
     "name": "Open Science Framework",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "84a831c278614f468dd9ec45551ed8bf",
+            "id": "2b3b14d6460e29ccc13f07ff1bef97f0",
             "name": "Root",
             "url": "httpstest-api.osf.io\/v2\/",
             "description": "Welcome to the Open Science Framework API. With this API you can access users, projects, components, logs, and files from the [Open Science Framework](https:\/\/osf.io\/). The Open Science Framework (OSF) is a free, open-source service maintained by the [Center for Open Science](http:\/\/cos.io\/).\n\n#### Returns\nA JSON object with `meta` and `links` keys.\n\nThe `meta` key contains information such as a welcome message from the API, the specified version of the request, and the full representation of th",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "a78454ca9c1411933e639356d6ab9a3e",
+            "id": "05bfee2630aa709f41df7cb260731f9d",
             "name": "Actions",
             "url": "httpstest-api.osf.io\/v2\/actions\/",
             "description": "\nA log can have one of many actions. The complete list of loggable actions (in the format {identifier}: {description}) is as follows:\n* `project_created`: A Node is created\n* `project_registered`: A Node is registered\n* `project_deleted`: A Node is deleted\n* `created_from`: A Node is created using an existing Node as a template\n* `pointer_created`: A Pointer is created\n* `pointer_forked`: A Pointer is forked\n* `pointer_removed`: A Pointer is removed\n* `node_removed`: A component is deleted\n* `no",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "dd992488dee33e6d52d8934c9b318172",
+            "id": "be3ed2ac1ef1343e0c902b08f92b2f1a",
             "name": "List all addons",
             "url": "httpstest-api.osf.io\/v2\/addons\/",
             "description": "\nA paginated list of addons configurable with the OSF\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 addons. Each resource in the array is a separate addon object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nThis request should never return an error.",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "cf38d9c81c5d7a3cf942b76f5e9d9d30",
+            "id": "fe67fb1f66ab9c167892aa392fe9054f",
             "name": "List all citation styles",
             "url": "httpstest-api.osf.io\/v2\/citations\/styles\/",
             "description": "\nA paginated list of all standard citation styles available for rendering citations.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 citation styles. Each resource in the array is a separate citation syle and contains the full representation of the citation style object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nThis request should never return an error.\n#### Filteri",
@@ -98,11 +98,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "981a51b1e97a655c22cf50d100d54c96",
+            "id": "99f936b09154be9b149ac01bb3cdab9e",
             "name": "Retrieve a citation style",
             "url": "httpstest-api.osf.io\/v2\/citations\/styles\/{style_id}\/",
             "description": "Retrieves the details of a citation style.\n#### Returns\nReturns a JSON object with a `data` key containing the representation of the requested citation style, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -129,11 +129,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "55e4743317c62283a642dd7e76f5ec36",
+            "id": "bc393d566c360824acabf010b146faa8",
             "name": "Delete a comment",
             "url": "httpstest-api.osf.io\/v2\/comments\/{comment_id}\/",
             "description": "Deletes a comment. This action can be undone by setting deleted to False in a comment update request.\n#### Returns\nIf the request is successful, no content is returned.\n\nIf the request is unsuccessful, a JSON object with an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -160,11 +160,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "3c5d8955175ce41e161d72b4c4249205",
+            "id": "7057ac3f7305bf120127ac734e620895",
             "name": "Retrieve a comment",
             "url": "httpstest-api.osf.io\/v2\/comments\/{comment_id}\/",
             "description": "Retrieves the details of a comment\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested comment, if the request was successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -191,11 +191,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "ceab83c93fa6c0003cc8733edbd35b4a",
+            "id": "1b6eb3c92b6586b5afc2ff27d125cd56",
             "name": "Update a comment",
             "url": "httpstest-api.osf.io\/v2\/comments\/{comment_id}\/",
             "description": "Updates the specified comment by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n#### Returns\nReturns JSON with a `data` key containing the new representation of the updated comment, if the request is successful.\n\nIf the request is unsuccessful, JSON with an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -229,11 +229,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "fb46b4bdc2cf8b405a6c1e159bfdd6e5",
+            "id": "3bef3715981fef047e3a973eb132ddf1",
             "name": "Retrieve a file",
             "url": "httpstest-api.osf.io\/v2\/files\/{file_id}\/",
             "description": "Retrieves the details of a file (or folder)\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested file, if the request was successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.\n###Waterbutler API actions\n\nFiles can be modified through the Waterbutler API routes found in `links` ",
@@ -260,11 +260,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "bf725501ffea3c153da7c5d3167d3dde",
+            "id": "51ae46f130a9764790e5ffc2a55a2813",
             "name": "Update a file",
             "url": "httpstest-api.osf.io\/v2\/files\/{file_id}\/",
             "description": "Updates the specified file by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n#### Returns\nReturns JSON with a `data` key containing the new representation of the updated file, if the request is successful.\n\nIf the request is unsuccessful, JSON with an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -298,11 +298,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "8b638104be19ab6ea2f9106ebadd7f12",
+            "id": "2c2fb1940fe621ff5f3d7e6354aaf513",
             "name": "List all file versions",
             "url": "httpstest-api.osf.io\/v2\/files\/{file_id}\/versions\/",
             "description": "\nA paginated list of all file versions.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 file versions. Each resource in the array is a separate file version object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_",
@@ -329,11 +329,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "7efa566da7b9f9deb592a706493c9793",
+            "id": "69eb1a5cbdefea75d7ad040b2d5fd844",
             "name": "Retrieve a file version",
             "url": "httpstest-api.osf.io\/v2\/files\/{file_id}\/versions\/{version_id}\/",
             "description": "Retrieves the details of a file version\n####Returns\n\nReturns a JSON object with a `data` key containing the representation of the requested file, if the request was successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -367,11 +367,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "7a83b77e57dc0556fcccf026141b1eef",
+            "id": "5dd1d3a562a1699b8a9c7ca91addeb10",
             "name": "List all institutions",
             "url": "httpstest-api.osf.io\/v2\/institutions\/",
             "description": "\nA paginated list of all verified institutions.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 institutions. Each resource in the array is a separate institution object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nThis request should never return an error.\n#### Filtering\nYou can optionally request that the response only include institutions that match your filters by ",
@@ -390,11 +390,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "7f6f30ea7aa8b6006e73239afa8d1efc",
+            "id": "1d2290f8ee16f9ae769ceaf1bb75c0a3",
             "name": "Retrieve an institution",
             "url": "httpstest-api.osf.io\/v2\/institutions\/{institution_id}\/",
             "description": "Retrieves the details of an institution\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested institution, if the request was successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -421,11 +421,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "96a1acb27f852240b7f69633ec0d72a6",
+            "id": "0faf5be89188e5d6a39b4a0ddedbf49a",
             "name": "List all affiliated nodes",
             "url": "httpstest-api.osf.io\/v2\/institutions\/{institution_id}\/nodes\/",
             "description": "A paginated list of all nodes affiliated with an institution.\n#### Versioning\nAs of version `2.2`, affiliated components (in addition to affiliated top-level projects) are returned from this endpoint.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 nodes. Each resource in the array is a separate nodes object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nIf the request i",
@@ -452,11 +452,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "771fc5441c9d190a51d54e3ac176ec7d",
+            "id": "ce50d1295342729dcb85a9098086d0e3",
             "name": "List all affiliated registrations",
             "url": "httpstest-api.osf.io\/v2\/institutions\/{institution_id}\/registrations\/",
             "description": "A paginated list of all registrations affiliated with an institution.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 registrations. Each resource in the array is a separate users object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error code",
@@ -483,11 +483,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "7a49a9161beecf20554a0976aab8a578",
+            "id": "0b3f2c6bd9c0285c0b895c271072c10b",
             "name": "List all affiliated users",
             "url": "httpstest-api.osf.io\/v2\/institutions\/{institution_id}\/users\/",
             "description": "A paginated list of all users affiliated with an institution.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 users. Each resource in the array is a separate users object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction",
@@ -514,11 +514,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "6d6c6dd7802b10f0830338a9c3048db4",
+            "id": "303aca59a736f17cbb78c45a41ca0840",
             "name": "Retrieve a license",
             "url": "httpstest-api.osf.io\/v2\/license\/{license_id}\/",
             "description": "Retrieves the details of a license.\n#### Returns\nReturns a JSON object with a `data` key containing the representation of the requested license, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -545,11 +545,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "630b23631bae45a59f7be1cd27cd3ac8",
+            "id": "2e1b3d5b1e8de5083becadfbc60cfd85",
             "name": "List all licenses",
             "url": "httpstest-api.osf.io\/v2\/licenses\/",
             "description": "A paginated list of licenses. The returned licenses are sorted by their name.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\nThe `data` key contains an array of 10 licenses. Each resource in the array is a separate license object and contains the full representation of the license, meaning additional requests to a license's detail view are not necessary.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nThis requ",
@@ -568,11 +568,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "1beb175b57fa0ab55904fe25f87a09f4",
+            "id": "cd957a2190f0945a93357d7f2ddcb9ef",
             "name": "Retrieve a log",
             "url": "httpstest-api.osf.io\/v2\/logs\/{log_id}\/",
             "description": "Retrieves the details of a log.\nA log is permanent immutable record of a node's history. A log is created when a user performs one of many actions. See the [actions](#Logs_logs_actions) section for more details.\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested log, if the request was successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduct",
@@ -599,11 +599,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "95fc766100f04c91a3a7fe17080c8243",
+            "id": "6907f7a622c124b8c4e708ec8b54d163",
             "name": "List all metaschemas",
             "url": "httpstest-api.osf.io\/v2\/metaschemas\/",
             "description": "\nA paginated list of all active metaschemas.\nMetaschemas describe the supplemental questions that accompany a registration.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 metaschemas. Each resource in the array is a separate metaschema object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nThis request should never return an error.",
@@ -622,11 +622,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "ea3452bc12e421d60a97198415284b4d",
+            "id": "20c77b01aa2b3377e29ec9fb4c4be78a",
             "name": "Retrieve a metaschema",
             "url": "httpstest-api.osf.io\/v2\/metaschemas\/{metaschema_id}",
             "description": "Retrieves the details of a given metaschema.\n\nMetaschemas describe the supplemental questions that accompany a registration.\n\n#### Returns\nReturns a JSON object with a `data` key containing the representation of the requested metaschema, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -653,11 +653,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "ee209a86b02b33feaa1b95dc589ed561",
+            "id": "1c91611db3666dbb4e8a4f6eb3773651",
             "name": "List all nodes",
             "url": "httpstest-api.osf.io\/v2\/nodes\/",
             "description": "\nA paginated list of nodes, representing projects and components, on the OSF.\n\nThe returned nodes are those which are public or which the user has access to view.\n\nThe returned nodes are sorted by their `date_modified`, with the most recently updated nodes appearing first.\n\nRegistrations cannot be accessed through this endpoint (use the [registrations](#Registrations_registrations_list) endpoints instead).\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key con",
@@ -676,11 +676,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "b03c68baf400ef911c7ce12f3eebab4d",
+            "id": "e22665d5370229b9e669eb7b86b771d6",
             "name": "Create a node",
             "url": "httpstest-api.osf.io\/v2\/nodes\/",
             "description": "Creates a new node.\n\nOn the OSF, nodes are considered **projects** or **components**. The difference between a project and a component is that a project is a top-level node, and a component is a child of a project.\n\nAdditionally, nodes have a `category` field that includes **project** as an option. The categorization determines what icon is displayed with the node on the OSF, and helps with search organization. Projects (top-level nodes) may have a category other than project, and components (ch",
@@ -707,11 +707,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "9f43dc18d6b1b249c0a0999ffbe769c2",
+            "id": "a58ee5df8e02947d94e2ed770a9c5c8f",
             "name": "Delete a node",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/",
             "description": "\nPermanently deletes a node. This action cannot be undone.\n#### Permissions\nOnly project administrators may delete a node. Attempting to delete a node for which you are not an administrator will result in a **403 Forbidden** response.\n#### Returns\nIf the request is successful, no content is returned.\n\nIf the request is unsuccessful, a JSON object with an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to unders",
@@ -738,11 +738,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "499b36073b4c5beb4c117f6a93410a6f",
+            "id": "0f63df30705652590ec67a22c6092767",
             "name": "Retrieve a node",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/",
             "description": "Retrieves the details of a given node (project or component).\n#### Permissions\nOnly project contributors may retrieve the details of a private node. Attempting to retreive a private node for which you are not a contributor will result in a **403 Forbidden** response.\n\nAuthentication is not required to view the details of a public node, as public nodes give read-only access to everyone.\n#### Returns\nReturns a JSON object with a `data` key containing the representation of the requested node, if th",
@@ -769,11 +769,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "7cf854bc8dfde9d6da41aa481a1104bd",
+            "id": "3465bc744c9d07164d67dac616bb2c75",
             "name": "Update a node",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/",
             "description": "Updates a node by setting the values of the attributes specified in the request body. Any unspecified attributes will be left unchanged.\n\nNodes can be updated with either a **PUT** or **PATCH** request. The `title` and `category` fields are mandatory in a **PUT** request, and optional in a **PATCH**.\n#### Permissions\nOnly write contributors may update a node. Attempting to update a node for which you do not have write access will result in a **403 Forbidden** response.\n#### Returns\nReturns a JSO",
@@ -807,11 +807,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "40e5743933ee804639dd7e1675a635fa",
+            "id": "50c9ec2ed987194f2e77efb6db2ffe59",
             "name": "List all addons",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/addons\/",
             "description": "\nA paginated list of addons connected to the given node or project.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of at most 10 addon objects. Each resource in the array is a separate addon object and contains the full representation of the addon, meaning additional requests to a addon's detail view are not necessary.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).",
@@ -838,11 +838,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "b15217ddb4f5a7ee3ebc3a6a96ff1168",
+            "id": "a3afe6cf7ce5ef70634bb92ce604b3b7",
             "name": "Retrieve an addon",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/addons\/{provider}\/",
             "description": "Retrieve details of an individual addon connected to this node.\n#### Permissions\nNodeSettings that are attached to public nodes will give read-only access to everyone. Private nodes require explicit read permission. Write and admin access are the same for public and private nodes. Administrators on a parent node have implicit read permissions for all child nodes.\nAny users with write or admin access to the node are able to deauthorize an enabled addon, but only the addon authorizer is able to ch",
@@ -876,11 +876,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "af286f142972e96d071ea8c16375a0fe",
+            "id": "eea207d8c2c5b7b87274efe58aa8e070",
             "name": "Update an addon",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/addons\/{provider}\/",
             "description": "Updates a node addon by setting the values of the attributes specified in the request body. Any unspecified attributes will be left unchanged.\n\nNode addon can be updated with either a **PUT** or **PATCH** request. The `external_account_id`, `enabled`, and `folder_id` fields are mandatory in a **PUT**, and optional in **PATCH**. Non-string values will be accepted and stringified, however we make no promises about the stringification output.\n\nTo delete or deauthorize a node addon, issue a **PUT** ",
@@ -921,11 +921,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "a921639902b64d075bdc87a65722b150",
+            "id": "164d44d8acbf6cfb0eb27ad5a73d5f7a",
             "name": "List all addon folders",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/addons\/{provider}\/folders\/",
             "description": "\nA paginated list of folders retrieved from the associated third-party (provider) service.\n#### Permissions\nFolders are visible only to the user that authorized the addon.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of addon folder objects. Each resource in the array is a separate addon folder object and contains the full representation of the addon folder, meaning additional requests to a addon folder's detail view are not necessary.\n",
@@ -959,11 +959,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "d29478eb8d801433723ab1a47517c5c5",
+            "id": "07c17b12629dff13b5fa8ccd8bfb1915",
             "name": "List all child nodes",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/children\/",
             "description": "\nA paginated list of the next level child nodes for the given node. The returned nodes are sorted by their `date_modified`, with the most recently updated child nodes appearing first.\n\nThe list will include child nodes that are public, as well as child nodes that are private, if the authenticated user has permission to view them.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 child nodes. If the given node has zero child nodes",
@@ -990,11 +990,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "b8daf59720de83fd068b600403284ab8",
+            "id": "1cb213fe224213e8f6f553c1c07ac7c0",
             "name": "Create a child node",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/children\/",
             "description": "Creates a new child node.\n\nNote: Creating a child node via this endpoint will function the same as creating a node via the node list endpoint, but the child node will have the given node set as its parent.\n#### Permissions\nOnly write contributors may create children nodes.\n#### Required\nRequired fields for creating a node include:\n\n&nbsp;&nbsp;&nbsp;&nbsp`title`\n\n&nbsp;&nbsp;&nbsp;&nbsp`category`\n\nNote: nodes default to **private** unless the `public` field is explicitly set to **true** in the r",
@@ -1028,11 +1028,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "0223d207a4f99e99022b188991f38de8",
+            "id": "5f15c0ee9694758188756447c486c2d3",
             "name": "Retrieve citation details",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/citation\/",
             "description": "The citation details for a node, in CSL format.\n#### Returns\nReturns a JSON object with a `data` key that contains the representation of the details necessary for the node citation.",
@@ -1059,11 +1059,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "f0a90e6e91559a7f12a144baef59ec62",
+            "id": "038785b6a02580d6fa105e5cfd00ddb1",
             "name": "Retrieve a styled citation",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/citation\/{style_id}\/",
             "description": "The citation for a node in a specific style.\n#### Returns\nReturns a JSON object with a `data` key that contains the representation of the node citation, in the requested style.",
@@ -1097,11 +1097,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "60b27b943a1448ba5499fed3d093c523",
+            "id": "b2e0cff010e872eedbf8ba4f8331530a",
             "name": "List all comments",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/comments\/",
             "description": "\nA paginated list of comments related to a given node.\n\nThe returned comments are sorted by their creation date, with the most recent comments appearing first.\n####Permissions\nComments on public nodes are given read-only access to everyone.\n\nIf the node comment-level is `private`, only contributors have permission to comment.\n\nIf the comment-level is `public`, any logged-in OSF user can comment.\n\nComments on private nodes are only visible to contributors and administrators on the parent node.\n##",
@@ -1128,11 +1128,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "05ad8380e6f59f5bd5e84e3e75a02ab3",
+            "id": "66d30943af980ffc97a839780d5255cc",
             "name": "Create a comment",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/comments\/",
             "description": "Create a comment on a given node overview page or a reply to a comment on that node.\n\nTo create a comment on the node overview page, the target `type` would be \"nodes\" and the target `id` would be the node `id`.\n\nTo reply to a comment on this node, the target `type` would be \"comments\" and the target `id` would be the `id` of the comment to reply to.\n####Required\nA relationship object with a `data` key, containing the target (`comments` or `nodes`) type and a target `id` is required.\nIn addition",
@@ -1166,11 +1166,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "ed0e2c29e4caf691d64ca7b7ed48e8b3",
+            "id": "7da0c0aefb57b9ec4f9568e241660f3e",
             "name": "List all contributors",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/contributors\/",
             "description": "A paginated list of the node's contributors, sorted by their index.\n\nContributors are users who can make changes to the node or, in the case of private nodes, have read access to the node.\n\nContributors are categorized as either \"bibliographic\" or \"non-bibliographic\". From a permissions standpoint, both are the same, but bibliographic contributors are included in citations and are listed on the project overview page on the OSF, while non-bibliographic contributors are not.\n\nNote that if an anony",
@@ -1197,11 +1197,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "0ab0a925d6d133381b2d81f80120b7be",
+            "id": "eef0cc9f2e78fad806555c8c3c8711d5",
             "name": "Create a contributor",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/contributors\/",
             "description": "Adds a contributor to a node, effectively creating a relationship between the node and a user.\n\nContributors are users who can make changes to the node or, in the case of private nodes, have read access to the node.\n\nContributors are categorized as either \"bibliographic\" or \"non-bibliographic\" contributors. From a permissions standpoint, both are the same, but bibliographic contributors are included in citations and are listed on the project overview page on the OSF, while non-bibliographic cont",
@@ -1235,11 +1235,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "482b3a82b1f23fa523fcdc1ad01f6f0d",
+            "id": "1d9d6d4d5a5b8cd8365b3d49d89efd5c",
             "name": "Delete a contributor",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/contributors\/{user_id}\/",
             "description": "Removes a contributor from a node. This request only removes the relationship between the node and the user, it does not delete the user itself.\n\nA node must always have at least one admin, and attempting to remove the only admin from a node will result in a **400 Bad Request** response.\n#### Permissions\nA user can remove themselves as a node contributor. Otherwise, only project administrators can remove contributors.\n#### Returns\nIf the request is successful, no content is returned.\n\nIf the req",
@@ -1273,11 +1273,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "17d4cf0434133e2379fb2f9dc85bb18c",
+            "id": "e68df4ab2b34407e16f4a63473f26c5a",
             "name": "Retrieve a contributor",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/contributors\/{user_id}\/",
             "description": "Retrieves the details of a given contributor.\n\nContributors are users who can make changes to the node or, in the case of private nodes, have read access to the node.\n\nContributors are categorized as either \"bibliographic\" or \"non-bibliographic\". From a permissions standpoint, both are the same, but bibliographic contributors are included in citations and are listed on the project overview page on the OSF, while non-bibliographic contributors are not.\n#### Returns\nReturns a JSON object with a `d",
@@ -1311,11 +1311,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "1f28e8a30dbf929604096c829a1df4a0",
+            "id": "29225cd02a544a0cc5f17f0e2b7633ee",
             "name": "Update a contributor",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/contributors\/{user_id}\/",
             "description": "Updates a contributor by setting the values of the attributes specified in the request body. Any unspecified attributes will be left unchanged.\n\nContributors can be updated with either a **PUT** or **PATCH** request. Since this endpoint has no mandatory attributes, PUT and PATCH are functionally the same.\n#### Permissions\nOnly project administrators can update the contributors on a node.\n#### Returns\nReturns a JSON object with a `data` key containing the new representation of the updated contrib",
@@ -1356,11 +1356,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "6ad6e95c45fb98fb72620644718b702b",
+            "id": "8ade0655de197dbdd790e3ba9a94f010",
             "name": "List all draft registrations",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/draft_registrations\/",
             "description": "A paginated list of all of the draft registrations of a given node.\n\nDraft registrations contain the supplemental registration questions that accompany a registration. A registration is a frozen version of the project that can never be edited or deleted, but can be withdrawn.\n\nYour original project remains editable but will now have the draft registration linked to it.\n#### Permissions\nOnly project administrators may view draft registrations.\n#### Returns\nReturns a JSON object containing `data` ",
@@ -1387,11 +1387,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "e6d7d33a67aed285cdaaac2a38c960ef",
+            "id": "de4a7667a44c87d7ec398434cb94a642",
             "name": "Create a draft registration",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/draft_registrations\/",
             "description": "Initiate a draft registration of the current node.\nDraft registrations contain the supplemental registration questions that accompany a registration. A registration is a frozen version of the project that can never be edited or deleted, but can be withdrawn.\n\nYour original project remains editable but will now have the draft registration linked to it.\n#### Permissions\nOnly project administrators may view create registrations.\n#### Required\nRequired fields for creating a draft registration includ",
@@ -1425,11 +1425,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "3155f8adca53c63a5dcda187eb833972",
+            "id": "b1f7888aeb7bfc4e0b269ecdde4e3d69",
             "name": "Delete a draft registration",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/draft_registrations\/{draft_id}\/",
             "description": "Permanently deletes a draft registration. A draft that has already been registered cannot be deleted.\n#### Permissions\nOnly project administrators may delete draft registrations.\n#### Returns\nIf the request is successful, no content is returned.\n\nIf the request is unsuccessful, a JSON object with an `errors` key containing information about the failure will be returned. Refer to the [list of error codes]() to understand why this request may have failed.",
@@ -1463,11 +1463,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "257f226a657d725b6c3e2b27ea92c756",
+            "id": "d7eb57c94380e8328980a6f0b3feb34e",
             "name": "Retrieve a draft registration",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/draft_registrations\/{draft_id}\/",
             "description": "Retrieve the details of a given draft registration.\nDraft registrations contain the supplemental registration questions that accompany a registration. A registration is a frozen version of the project that can never be edited or deleted, but can be withdrawn.\n\nYour original project remains editable but will now have the draft registration linked to it.\n#### Permissions\nOnly project administrators may view draft registrations.\n#### Returns\nReturns a JSON object with a `data` key containing the re",
@@ -1501,11 +1501,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "de5175e05fd417b40c467eab27508acc",
+            "id": "fdd987873298a474e563f3f15a3fba6a",
             "name": "Update a draft registration",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/draft_registrations\/{draft_id}\/",
             "description": "Updates a draft registration by setting the values of the attributes specified in the request body. Any unspecified attributes will be left unchanged.\n\nDraft registrations contain the supplemental registration questions that accompany a registration. Answer the questions in the draft registration supplement by sending update requests until you are ready to submit the draft.\n\nThe registration supplement of a draft registration cannot be updated after the draft has been created.\n\nWhen updating a d",
@@ -1546,11 +1546,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "6c0e71bbc749f3255e823a3d23badd92",
+            "id": "52ebc961c54afe0e820232ce8475dec8",
             "name": "List all storage providers",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/files\/",
             "description": "List of all storage providers that are configured for this node\n\nUsers of the OSF may access their data on a [number of cloud-storage services](https:\/\/api.osf.io\/v2\/#storage-providers) that have integrations with the OSF. We call these **providers**. By default, every node has access to the OSF-provided storage but may use as many of the supported providers as desired.\n\n\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of files. Each resour",
@@ -1577,11 +1577,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "809e484230ed06b1544965430d769c24",
+            "id": "8f3d5c42c47244477db0a53d3eca41cd",
             "name": "Retrieve a storage provider",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/files\/providers\/{provider}\/",
             "description": "Retrieves the details of a storage provider enabled on this node.\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested file object, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -1615,11 +1615,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "787d32ece5e7bfebb2c9b3ea1ca9fe7d",
+            "id": "e287641fe5176214ce4747593d575bcf",
             "name": "List all node files",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/files\/{provider}\/",
             "description": "List of all the files\/folders that are attached to your project for a given storage provider.\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of files. Each resource in the array is a separate file object and contains the full representation of the file.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\n####Filtering\n\nYou can optionally request that the response only include files ",
@@ -1653,11 +1653,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "253a865fd982eed36d03513365b4fb13",
+            "id": "d6332b0d60dba907b5975ec5681a873f",
             "name": "Retrieve a file",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/files\/{provider}\/{path}\/",
             "description": "Retrieves the details of a file attached to given node (project or component) for the given storage provider.\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested file object, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -1698,11 +1698,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "99808770f86f92d168c424b6d047d5c8",
+            "id": "a03db63bf4249533da942a76f417c3d4",
             "name": "List all forks of this node",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/forks\/",
             "description": "\nA paginated list of the current node's forks. The returned fork nodes are sorted by their `forked_date`, with the most recently forked nodes appearing first.\n\nForking a project creates a copy of an existing node and all of its contents. The fork always points back to the original node, forming a network of nodes.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 forked nodes. If the current node has zero forked nodes, the `data`",
@@ -1729,11 +1729,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "ce229a136e897d42b47b3ee3d0a9c7bc",
+            "id": "817a8f7502cb112f4384a3efdb3d44f9",
             "name": "Create a fork of this node",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/forks\/",
             "description": "Creates a fork of the given node.\n\nForking a project creates a copy of an existing node and all of its contents. The fork always points back to the original node, forming a network of nodes.\n\nYou might use a fork to copy another's work to build on and extend. For example, a professor may create an OSF project of materials for individual student use. Each student forks the project to have his or her own copy of the materials to start his\/her own work.\n\nWhen creating a fork, your fork will only co",
@@ -1767,11 +1767,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "d6a44039a19b8b923cb8b6db39053ba1",
+            "id": "03db1c0b2d0a7b7bcb1b2b687b5c1df0",
             "name": "List all identifiers",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/identifiers\/",
             "description": "List all identifiers associated with a given node.\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of identifiers. Each resource in the array is a separate identifier object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n####Filtering\n\nYou can optionally request that the response only include nodes that match your filters by utilizing the `filter` query parameter, e.g. https:\/\/a",
@@ -1798,11 +1798,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "86485789fcd66974cbb790e22ebf29d2",
+            "id": "2f85cf1b3e8490c9b3735995bfa38864",
             "name": "List all institutions",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/institutions\/",
             "description": "List of all institutions affiliated with this node.\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 affilited institutions. Each resource in the array is a separate institution object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).",
@@ -1829,11 +1829,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "0414417d3c5b20c02c8ef9a39e06ecda",
+            "id": "cac8253496a30c0d05b4db60136eac36",
             "name": "List all linked nodes",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/linked_nodes\/",
             "description": "List of all nodes linked to the given node.\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 nodes. Each resource in the array is a separate node object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n####Filtering\nYou can optionally request that the response only include nodes that match your filters by utilizing the `filter` query parameter, e.g. https:\/\/api.osf.io\/v",
@@ -1860,11 +1860,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "60f1b2d34fd32ef02632d007f38726c1",
+            "id": "dbac980bdf32e175cda0070d61779418",
             "name": "List all logs",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/logs\/",
             "description": "A paginated list of all logs associated with a given node.\n\nThe returned logs are sorted by their `date`, with the most recents logs appearing first.\n\nThis list includes the logs of the specified node as well as the logs of that node's children to which the current user has read-only access.\n\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 logs. Each resource in the array is a separate logs object.\n\nThe `links` key contains a di",
@@ -1891,11 +1891,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "6ce8fba99d764fc8144e233acd882788",
+            "id": "7e0760b41a1b860059e7151da6fe5d25",
             "name": "List all preprints",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/preprints\/",
             "description": "A paginated list of preprints related to a given node. The returned preprints are sorted by their creation date, with the most recent preprints appearing first.\n\n**Note: This API endpoint is under active development, and is subject to change in the future.**\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 preprints. Each resource in the array is a separate preprint object.\n\nThe `links` key contains a dictionary of links that ca",
@@ -1922,11 +1922,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "221c2b8c833d1d56abd437ae0fa4bfda",
+            "id": "a7b609728855c631fa206a44aa8b81d9",
             "name": "List all registrations",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/registrations\/",
             "description": "List of all registrations of the given node.\n####Returns\n\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 registrations. Each resource in the array is a separate registrations object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n####Filtering\n\nYou can optionally request that the response only include registrations that match your filters by utilizing the filter query parameter,",
@@ -1953,11 +1953,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "f853eed0fc1c17eecf733176b27864e8",
+            "id": "37cdd4a289c9607e516fc850ad0b376d",
             "name": "List all view only links",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/view_only_links\/",
             "description": "List of view only links on a node.\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 view only links. Each resource in the array is a view only link object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\n####Permissions\n\nView only links on a node, public or private, are readable and writeable only by users that are administrators on the node.\n\n####Filtering\n\nYou can op",
@@ -1984,11 +1984,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "21f8eec0dd2bb860ba43ac8f95886d11",
+            "id": "46477ec27d75d05e326e35d58ef23df7",
             "name": "Retrieve a view only link",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/view_only_links\/{link_id}\/",
             "description": "Retrieves the details of a view only link on a node.\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested view only link, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.\n####Permissions\n\nView only links on a node, public or private, are readable and writ",
@@ -2022,11 +2022,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "5685cc5f9f8754b4c78b1b8e3609a43a",
+            "id": "6302b58827356c82c9e023c77b4acc45",
             "name": "List all wikis",
             "url": "httpstest-api.osf.io\/v2\/nodes\/{node_id}\/wikis\/",
             "description": "List of wiki pages on a node.\n####Returns\nPaginated list of the node's current wiki page versions ordered by their date_modified. Each resource contains the full representation of the wiki, meaning additional requests to an individual wiki's detail view are not necessary.\n\nNote that if an anonymous view_only key is being used, the user relationship will not be exposed.\n\nIf the request is unsuccessful, a JSON object with an `errors` key containing information about the failure will be returned. R",
@@ -2053,11 +2053,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "8887c76275eaa6891c4f2cba21993751",
+            "id": "a374f1d055134fa4a22d5c312f826571",
             "name": "List all preprint providers",
             "url": "httpstest-api.osf.io\/v2\/preprint_providers\/",
             "description": "\nA paginated list of all preprint providers. The returned preprint providers are sorted by their creation date, with the most recent preprints appearing first.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 preprint providers. Each resource in the array is a separate preprint provider object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nThis request should never return",
@@ -2076,11 +2076,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "4176c48076938cb9c354900ece9fa405",
+            "id": "8279ff5b3a7966c27ccf1a9a53062e72",
             "name": "Retrieve a preprint provider",
             "url": "httpstest-api.osf.io\/v2\/preprint_providers\/{preprint_provider_id}\/",
             "description": "Retrieves the details of a preprint provider.\n#### Returns\nReturns a JSON object with a `data` key containing the representation of the requested preprint provider, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.\n\n#### Acceptable Subjects Structure\nEach preprint provider specifies acceptable subject",
@@ -2107,11 +2107,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "93e45424547e36f84d362752313bf980",
+            "id": "e66d53d90959a19018b1e4a6e53c737b",
             "name": "List all licenses",
             "url": "httpstest-api.osf.io\/v2\/preprint_providers\/{preprint_provider_id}\/licenses\/",
             "description": "\nA paginated list of the licenses allowed bya preprint provider.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 preprint providers. Each resource in the array is a separate preprint provider object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list o",
@@ -2138,11 +2138,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "c72268512d201d5e58082f785bc43cc1",
+            "id": "e147e658847b2a778dd0b9a3352ffdca",
             "name": "List all preprints",
             "url": "httpstest-api.osf.io\/v2\/preprint_providers\/{preprint_provider_id}\/preprints\/",
             "description": "\nA paginated list of preprints from the specified preprint provider. The returned preprints are sorted by their creation date, with the most recent preprints appearing first.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 preprints. Each resource in the array is a separate preprint object.\n\nThe `links` key contains a dictionary with keys that can be used for [pagination](#Introduction_pagination).\n\nIf the request is unsuccessful, an",
@@ -2169,11 +2169,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "5244024c97f421baa801161ab2761481",
+            "id": "a8ac972dd067c63a40567cf97c43ce23",
             "name": "List all taxonomies",
             "url": "httpstest-api.osf.io\/v2\/preprint_providers\/{preprint_provider_id}\/taxonomies\/",
             "description": "\nA paginated list of the taxonomies for a preprint provider. The returned preprint providers taxonomies are sorted by their creation date, with the most recent preprints appearing first.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 preprint providers. Each resource in the array is a separate preprint provider object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nIf th",
@@ -2200,11 +2200,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "3600e2de445cb7eeb6f9122ab3ab79a2",
+            "id": "bdf67bbb434c56c05a63d09697761aae",
             "name": "List all preprints",
             "url": "httpstest-api.osf.io\/v2\/preprints\/",
             "description": "\nA paginated list of preprints from all preprint providers. The returned preprints are sorted by their creation date, with the most recent preprints appearing first.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 preprints. Each resource in the array is a separate preprint object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nThis request should never return an error.\n#",
@@ -2223,11 +2223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "62bcc5d393630ae788be605bb236a760",
+            "id": "d5df87d3c2a3de9533c2b704374b12f8",
             "name": "Create a preprint",
             "url": "httpstest-api.osf.io\/v2\/preprints\/",
             "description": "Creates a new preprint.\n#### Returns\nReturns a JSON object with a `data` key containing the representation of the created preprint, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes]() to understand why this request may have failed.",
@@ -2254,11 +2254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "f0fca5537bc75bc19a3d01a4f372bfa1",
+            "id": "c60f78b6b2d6b2e56a5e54f581115e9e",
             "name": "Retrieve a preprint",
             "url": "httpstest-api.osf.io\/v2\/preprints\/{preprint_id}\/",
             "description": "Retrieves the details of a preprint.\n#### Returns\nReturns a JSON object with a `data` key containing the representation of the requested preprint, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -2285,11 +2285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "ca3f261bc1e7b6517ce316d4e747b7b5",
+            "id": "977257e8c86cc4bedb1d1974f5752733",
             "name": "Update a preprint",
             "url": "httpstest-api.osf.io\/v2\/preprints\/{preprint_id}\/",
             "description": "Updates the specified preprint by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n#### Returns\nReturns a JSON object with a `data` key containing the new representation of the updated preprint, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes]() to understand why this request may have failed.",
@@ -2323,11 +2323,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "ed9b2195915b89676dbd3013e15ea4c0",
+            "id": "4d24af89a636c2fb6bbff2c4895a26d9",
             "name": "Retrieve citation details",
             "url": "httpstest-api.osf.io\/v2\/preprints\/{preprint_id}\/citation\/",
             "description": "The citation details for a preprint, in CSL format.\n#### Returns\nReturns a JSON object with a `data` key that contains the representation of the details necessary for the preprint citation.",
@@ -2354,11 +2354,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "a501911c4e74e1b316ddf0db849e5fad",
+            "id": "fb0e4cca8ecbe1b3e079bb5f9e1d32ee",
             "name": "Retrieve a styled citation",
             "url": "httpstest-api.osf.io\/v2\/preprints\/{preprint_id}\/citation\/{style_id}\/",
             "description": "The citation for a preprint in a specific style.\n#### Returns\nReturns a JSON object with a `data` key that contains the representation of the preprint citation, in the requested style.",
@@ -2392,11 +2392,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "c6ffff403dc6e2e548c236101f0980b2",
+            "id": "6df2f84755328b712b0910c22207c3cb",
             "name": "List all registrations",
             "url": "httpstest-api.osf.io\/v2\/registrations\/",
             "description": "A paginated list of registrations on the OSF to which the user has access.\n\nThe returned registrations are those which are public or which the user has access to view.\n\nNon-registered nodes cannot be accessed through this endpoint (use the [nodes](#Nodes_nodes_list) endpoints instead).\n\n#### Registrations\nA registration on the OSF creates a frozen, time-stamped version of a project that cannot be edited or deleted. The *original project* can still be edited, while the registered version cannot.\n",
@@ -2415,11 +2415,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "eb7ae731b62d6e92d1b22df6e659f8d7",
+            "id": "867ef0c69cf4dbf867e9b7ac232a04d4",
             "name": "Retrieve a registration",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/",
             "description": "Retrieve the details of a given registration.\n#### Permissions\nOnly project contributors may retrieve the details of a registration that is embargoed, or has not yet been made public. Attempting to retrieve a private registration for which you are not a contributor will result in a **403 Forbidden** response.\n\nAuthentication is not required to view the details of a public registration, as public registrations give read-only access to everyone.\n#### Registrations\nA registration on the OSF creates",
@@ -2446,11 +2446,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "89b32a097b62dba894b465044d04edd7",
+            "id": "7c795f7820a7f198c1a7f72a1a0847a2",
             "name": "Update a registration",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/",
             "description": "Updates a registration's privacy from **private** to **public**.\n\nRegistrations can be updated with either a **PUT** or **PATCH** request. The `public` field is the only field that can be modified on a registration\n\nRegistrations can only be turned from private to public, not vice versa.\n#### Permissions\nOnly project administrators may update a registration.\n#### Returns\nReturns a JSON object with a `data` key containing the new representation of the updated registration, if the request is succe",
@@ -2484,11 +2484,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "1f596f2d413af30c0b796337e9f74090",
+            "id": "4b45820f3c78e2f0636c7d0aa638ed26",
             "name": "List all child registrations",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/children\/",
             "description": "\nA paginated list of children of a registration.\n\nThe list consists of the next level child registrations for the given registration. The returned registrations are sorted by their `date_modified`, with the most recently updated child registrations appearing first.\n\nThe list will include child registrations that are public, as well as child registrations that are private, if the authenticated user has permission to view them.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.",
@@ -2515,11 +2515,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "dcb51276b3221455a2e34bbaaa550d0d",
+            "id": "677bfca027b40295e8f813b56a590454",
             "name": "List all citation styles",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/citations\/",
             "description": "\nA paginated list of the registration's alternative citation styles\n\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 citation styles. Each resource in the array is a separate citation styles object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n#### Filtering\nYou can optionally request that the response only include citation styles that match your filters by utilizi",
@@ -2546,11 +2546,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "18ec2522cd1f96b690476f57362dd8f1",
+            "id": "ace3613ccc51412a2bdb2e7b7ce4409d",
             "name": "Retrieve a citation",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/citations\/{citation_id}\/",
             "description": "Retrieves the citation style details for a registration, in CSL format.\n#### Returns\nReturns a JSON object with a `data` key that contains the representation of the details necessary for the citation style.",
@@ -2584,11 +2584,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "6d9737ac2207ed6e653b5bddaac9b0b3",
+            "id": "e7a696ea87e3c9cffd00a567d91edad9",
             "name": "List all comments",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/comments\/",
             "description": "\nA paginated list of the registration's comments.\n\nThe returned comments are sorted by their creation date, with the most recent comments appearing first.\n####Permissions\nComments of public registrations are given read-only access to everyone.\n\nIf the comment-level is `private`, only registration contributors have permission to comment.\n\nIf the comment-level is `public`, any logged-in OSF user can comment.\n\nComments of private registrations are only visible to contributors and administrators on ",
@@ -2615,11 +2615,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "60dff7df4097a05e2249cf38de948b99",
+            "id": "c72a80e44c1a03e6d78ebccc242e8ad4",
             "name": "List all contributors",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/contributors\/",
             "description": "A paginated list of all contributors on this registration.\nThe returned contributors are sorted by their index.\n\nContributors are users who can make changes to the registration or, in the case of private registration, have read access to the registration.\n\nContributors are categorized as either \"bibliographic\" or \"non-bibliographic\". From a permissions standpoint, both are the same, but bibliographic contributors are included in citations and are listed in the contributors list on the OSF, while",
@@ -2646,11 +2646,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "4777de3c8d5692e78ec2a84013934bc8",
+            "id": "3db4815dfde106e4886008362d5d7277",
             "name": "Retrieve a contributor",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/contributors\/{user_id}\/",
             "description": "Retrieves the details of a contributor on this registration.\n\n#### Returns\nReturns a JSON object with a `data` key containing the representation of the requested contributor, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -2684,11 +2684,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "9b55322540fded4f4271721d2ac38fcd",
+            "id": "12dd1da5aef215511318700486eb1c2c",
             "name": "List all storage providers",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/files\/",
             "description": "A paginated list of storage providers enabled on the registration\n\nUsers of the OSF may access their data on a [number of cloud-storage services](https:\/\/api.osf.io\/v2\/#storage-providers) that have integrations with the OSF. We call these **providers**. By default, every node has access to the OSF-provided storage but may use as many of the supported providers as desired.\n\n\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 files. ",
@@ -2715,11 +2715,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "91bd3a39249a3a2b9e0602ce1b1421c2",
+            "id": "0742406c9baad1ecf1fa41575ddac6f0",
             "name": "List all files",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/files\/{provider}\/",
             "description": "List of all the registration's files\/folders for a given storage provider.\n\n####Returns\n\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of files. Each resource in the array is a separate file object and contains the full representation of the file.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\n####Filtering\n\nYou can optionally request that the response only include files that match your f",
@@ -2753,11 +2753,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "8149ed142afdd75963291db733a5d8bc",
+            "id": "51bb8098a5e15d56d7c1be32aa48f7f6",
             "name": "Retrieve a file",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/files\/{provider}\/{path}\/",
             "description": "Retrieves the details of a registration file for the given storage provider.\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested registration file object, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -2798,11 +2798,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "1565606877ccdcb60558a0101e9feb90",
+            "id": "3fc225911a8f02d7c9915fa2a4f512a5",
             "name": "List all forks",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/forks\/",
             "description": "\nA paginated list of the registration???s forks\n\nThe returned forks are sorted by their `forked_date`, with the most recent forks appearing first.\n\nForking a registration creates a copy of an existing registration and all of its contents.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 forks. If the current registration has no fork, the `data` key will contain an empty array. Each resource in the array is a separate registratio",
@@ -2829,11 +2829,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "cfe281dc2f45389cd155921742f68821",
+            "id": "0c04089da5ba9fe3ba161ed5158607c8",
             "name": "Create a fork",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/forks\/",
             "description": "Creates a fork of the given registration.\n\nForking a project creates a copy of an existing registration and all of its contents. The fork always points back to the original registration, forming a network of registrations.\n\nYou might use a fork to copy another's work to build on and extend. For example, a professor may create an OSF project of materials for individual student use. Each student forks the project to have his or her own copy of the materials to start his\/her own work.\n\nWhen creatin",
@@ -2867,11 +2867,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "e075c4489229425e9d95e1820403004b",
+            "id": "02d6dfaf8952d422a8eda673a4c4b24a",
             "name": "List all identifiers",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/identifiers\/",
             "description": "A paginated list of the registration's identifiers.\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of identifiers. Each resource in the array is a separate identifier object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n####Filtering\n\nYou can optionally request that the response only include registrations that match your filters by utilizing the `filter` query parameter, e.g. ",
@@ -2898,11 +2898,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "ecd3949ab9f501b054786f46e0f06664",
+            "id": "262cfb41ae9217cb2e3051730d163796",
             "name": "List all institutions",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/institutions\/",
             "description": "A paginated list of institutions affiliated with the registration.\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 affiliated institutions. Each resource in the array is a separate institution object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).",
@@ -2929,11 +2929,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "013551c02fd096976186238a61741a29",
+            "id": "f394a6ae59361c8ccb96ae9cb19c055b",
             "name": "List all linked nodes",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/linked_nodes\/",
             "description": "List of all nodes linked to the registration.\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 nodes. Each resource in the array is a separate node object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n####Filtering\nYou can optionally request that the response only include nodes that match your filters by utilizing the `filter` query parameter, e.g. https:\/\/api.osf.io",
@@ -2960,11 +2960,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "d221392b50a96d760465d0473e9edd5d",
+            "id": "9dce573b788262c51964b3bcf38e5355",
             "name": "List all logs",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/logs\/",
             "description": "A paginated list of the registration's logs.\n\nThe returned logs are sorted by their `date`, with the most recents logs appearing first.\n\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 logs. Each resource in the array is a separate logs object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n####Filtering\nYou can optionally request that the response only include logs t",
@@ -2991,11 +2991,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "b73ceb240bb1829d6e7014898dc81c44",
+            "id": "9fb25afa0c96ff4aca4580c8d7dd42d3",
             "name": "List all view only links",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/view_only_links\/",
             "description": "A paginated list of view only links created for this registration.\n####Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 view only links. Each resource in the array is a view only link object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\n####Permissions\n\nView only links on a registration, public or private, are readable and writeable only by users that are administrators",
@@ -3022,11 +3022,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "b17f030dc7b7d85260639a2ae7dc5beb",
+            "id": "9b069497241bba84a1f969db401652ad",
             "name": "Retrieve a view only link",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/view_only_links\/{link_id}\/",
             "description": "Retrieves the details of a view only link created from this registration.\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested view only link, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.\n####Permissions\n\nView only links on a registration, public or p",
@@ -3060,11 +3060,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "b2a53fc8bc94c0df42539b6aa9e8231c",
+            "id": "60ee8db9c2ecc4d0e9b1d5e4dacf5534",
             "name": "List all wikis",
             "url": "httpstest-api.osf.io\/v2\/registrations\/{registration_id}\/wikis\/",
             "description": "A paginated list of the registration's wiki pages\n####Returns\nA list of all registration's current wiki page versions ordered by their date_modified. Each resource contains the full representation of the wiki, meaning additional requests to an individual wiki's detail view are not necessary.\n\nIf the request is unsuccessful, a JSON object with an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why ",
@@ -3091,11 +3091,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "12fda437ec1628948b5cf633b521a666",
+            "id": "ccc8781095fe3f704b8d12d9179a3476",
             "name": "List all taxonomies",
             "url": "httpstest-api.osf.io\/v2\/taxonomies\/",
             "description": "\nA paginated list of all [bepress disciplines taxonomies](https:\/\/www.bepress.com\/wp-content\/uploads\/2016\/12\/Digital-Commons-Disciplines-taxonomy-2017-01.pdf).\nNote: this API endpoint is under active development, and is subject to change in the future.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 taxonomies. Each resource in the array is a separate taxonomy object.\n\nThe `links` key contains a dictionary of links that can be ",
@@ -3114,11 +3114,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "e26e4f360289478a5663ef77b8e4457d",
+            "id": "bcb56979b8498f042be15e185ee9775f",
             "name": "Retrieve a taxonomy",
             "url": "httpstest-api.osf.io\/v2\/taxonomies\/{taxonomy_id}\/",
             "description": "Retrieves the details of a taxonomy.\n#### Returns\n\nReturns a JSON object with a `data` key containing the representation of the requested taxonomy, if the request is successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -3145,11 +3145,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "a01c232a3f78b320dd9a24515aff84de",
+            "id": "a5548596d5a1f1350bdcc892d07ce6c0",
             "name": "List all users",
             "url": "httpstest-api.osf.io\/v2\/users\/",
             "description": "\nA paginated list of all users registered on the OSF. The returned users are sorted by their `date_registered`, with the most recently registered users appearing first.\n\nThe subroute `\/users\/me\/` is a special endpoint that always points to the currently logged-in user.\n#### Versioning\nAs of version `2.3`, merged users will not be returned from this endpoint.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 users. Each resource in the ",
@@ -3168,11 +3168,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "98005c13915f24774063bae60b566d8d",
+            "id": "c91a71e436da369285408821495c49aa",
             "name": "Retrieve a user",
             "url": "httpstest-api.osf.io\/v2\/users\/{user_id}\/",
             "description": "Retrieves the details of a given users.\n\nThe returned information includes the user's bibliographic information and the date the user was registered.\n\nAdditionally, relationships to the list of institutions with which the user is affiliated, and to the list of nodes which the user contributes to (that the requesting user has permission to see) are returned.\n\nIf `me` is given as the `user_id` in the request path, the record of the currently logged-in user will be returned.\n#### Returns\nReturns a ",
@@ -3199,11 +3199,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "47f1449a1974ee5422f5696bebbfc736",
+            "id": "9faa067e398ce40ce9a3891f6f606021",
             "name": "Update a user",
             "url": "httpstest-api.osf.io\/v2\/users\/{user_id}\/",
             "description": "Updates a user by setting the values of the attributes specified in the request body. Any unspecified attributes will be left unchanged.\n\nUsers can be updated with either a **PUT** or **PATCH** request. The `full_name` field is mandatory in a **PUT** request, and optional in a **PATCH**.\n\n**Note**: if you make a PUT\/PATCH request to the `\/users\/me\/` endpoint, you must still provide your full user ID in the ID field of the request. We do not support using the `me` alias in request bodies at this ",
@@ -3237,11 +3237,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "b2a44155c17446aa18747aa8869774c6",
+            "id": "2fc93bf2ff08210eddff61773c2bb68b",
             "name": "List all user addons",
             "url": "httpstest-api.osf.io\/v2\/users\/{user_id}\/addons\/",
             "description": "\nA paginated list of authorized user addons\n\n#### Permissions\n\nUser addons are visible only to the user that authorized the addon.\n\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of up to 10 addons. Each resource in the array is a separate addon object.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).\n\nIf the request is unsuccessful, an `errors` key containing information about t",
@@ -3268,11 +3268,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "2fc2ff9287e901a9a1a26a5779d737bc",
+            "id": "758bb1badf6ce50f503c5b487efb24c7",
             "name": "Retrieve a user addon",
             "url": "httpstest-api.osf.io\/v2\/users\/{user_id}\/addons\/{provider}\/",
             "description": "Retrieves the details of an authorized user addon\n\n#### Permissions\n\nUser addons are visible only to the user that authorized the addon.\n\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested user addon, if the request was successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.\n\nA",
@@ -3306,11 +3306,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "6a76c5340d8f0a39355e95fdce9205d4",
+            "id": "4d2f10534a0236c2954c69f4b34ebfa7",
             "name": "List all addon accounts",
             "url": "httpstest-api.osf.io\/v2\/users\/{user_id}\/addons\/{provider}\/accounts\/",
             "description": "\nA paginated list of addon accounts authorized by this user.\n\n#### Permissions\n\nAddon accounts are visible only to the user that authorized the account.\n\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of at most 10 addon account objects. Each resource in the array is a separate  addon account object and contains the full representation of the addon account.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](",
@@ -3344,11 +3344,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "324d97f623797e9ed2f9484b94ac9a68",
+            "id": "66d6385de0c8897a3b208a9f9e441794",
             "name": "Retrieve an addon account",
             "url": "httpstest-api.osf.io\/v2\/users\/{user_id}\/addons\/{provider}\/accounts\/{account_id}\/",
             "description": "Retrieves the details of an addon account\n\n#### Permissions\n\nAddon accounts are visible only to the user that authorized the account.\n\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested addon account, if the request was successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.",
@@ -3389,11 +3389,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "67e83d21b2e6453060567bb308ecc747",
+            "id": "978c782c8238c126be52f391dcf4bccc",
             "name": "List all institutions",
             "url": "httpstest-api.osf.io\/v2\/users\/{user_id}\/institutions\/",
             "description": "A paginated list of institutions that the user is affiliated with.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 institutions. Each resource in the array is a complete institution object and contains the full representation of the institution, meaning additional requests to a institution's detail view are not necessary.\n\nThe `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).",
@@ -3420,11 +3420,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "5a08d2dd60df7dc69b06319d571e5739",
+            "id": "eddbbe58c59e9771a72589d2ec76ea3d",
             "name": "List all nodes",
             "url": "httpstest-api.osf.io\/v2\/users\/{user_id}\/nodes\/",
             "description": "A paginated list of nodes that the user is a contributor to. The returned nodes are sorted by their `date_modified`, with the most recently updated nodes appearing first.\n\nIf the user ID in the path is the same as the logged-in user, all nodes will be returned. Otherwise, only the user's public nodes will be returned.\n\nUser registrations are not available at this endpoint.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 nodes. Each r",
@@ -3451,11 +3451,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "1504c155410ba0ce5247128f39326f65",
+            "id": "d09a6556f943caa1f9126b8880127845",
             "name": "List all preprints",
             "url": "httpstest-api.osf.io\/v2\/users\/{user_id}\/preprints\/",
             "description": "A paginated list of preprints that the user contributes to. The returned preprints are sorted by their creation date, with the most recent preprints appearing first.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key contains an array of 10 preprints. Each resource in the array is a complete preprint object and contains the full representation of the preprint, meaning additional requests to a preprint's detail view are not necessary.\n\nThe `links` key contains ",
@@ -3482,11 +3482,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "165be5e4cd1887e8609b27ca1f36c744",
+            "id": "5ba610e37683cd2c82fac7d9e06f0d19",
             "name": "List all registrations",
             "url": "httpstest-api.osf.io\/v2\/users\/{user_id}\/registrations\/",
             "description": "A paginated list of registrations that the user is a contributor to. The returned registrations are sorted by their `date_modified`, with the most recently updated registrations appearing first.\n\nIf the user ID in the path is the same as the logged-in user, all registrations will be returned. Otherwise, only the user's public registrations will be returned.\n\nUser nodes are not available at this endpoint.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\n\nThe `data` key conta",
@@ -3513,11 +3513,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "2afa7ec528030e2969c94e429181cee4",
+            "id": "0a904a21b8b41bcec181a46e9849cee1",
             "name": "Retrieve a view only link",
             "url": "httpstest-api.osf.io\/v2\/view_only_links\/{link_id}\/",
             "description": "Retrieves details about a specific view only link.\n####Permissions\nOnly project administrators may retrieve the details of a view only link. Attempting to retrieve a view only link without appropriate permissions will result in a 403 Forbidden response.\n#### Returns\nReturns a JSON object with a `data` key containing the representation of the requested view only link, if the request is successful.\nIf the request is unsuccessful, an `errors` key containing information about the failure will be ret",
@@ -3544,11 +3544,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "0bacdcc005dfc8e9fc74c47171a92c37",
+            "id": "79c215a77c84cd170018675a67ad1457",
             "name": "List all nodes",
             "url": "httpstest-api.osf.io\/v2\/view_only_links\/{link_id}\/nodes\/",
             "description": "\nThe list of nodes which this view only link gives read-only access to.\n#### Permissions\nOnly project administrators may retrieve the nodes of a view only link. Attempting to retrieve a view only link without appropriate permissions will result in a 403 Forbidden response.\n#### Returns\nReturns a JSON object containing `data` and `links` keys.\nThe `data` key contains an array of up to 10 nodes. Each resource in the array is a separate node object and contains the full representation of the node, ",
@@ -3575,11 +3575,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "21920ece1698c0d2bf7f755d8f59a52e",
+            "id": "6847ea142c681f10bf400ace5b7a45f0",
             "name": "Retrieve a Wiki",
             "url": "httpstest-api.osf.io\/v2\/wikis\/{wiki_id}\/",
             "description": "Retrieves the details about a specific wiki.\nA wiki is a collection of markdown text pages that can be used to describe the project or dataset of contained in the attached node.\n####Returns\nReturns a JSON object with a `data` key containing the representation of the requested wiki, if the request was successful.\n\nIf the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand wh",
@@ -3606,11 +3606,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         },
         {
-            "id": "d17f04e0b5e256ec1d13f81abe709ac0",
+            "id": "48bd7b67fedf26e699667bf711ae3eea",
             "name": "Retrieve the Content of a Wiki",
             "url": "httpstest-api.osf.io\/v2\/wikis\/{wiki_id}\/content\/",
             "description": "Retrieves the plaintext content of a wiki in markdown format.\n####Returns\nReturns `text\/markdown` of the wiki content itself.\nIf the request is unsuccessful, plaintext with the error message will be displayed.",
@@ -3637,7 +3637,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dc90f8906b5e299cf96707c727bdf25f",
+            "collectionId": "5e0b2b645a80d29032bf12b889630541",
             "rawModeData": ""
         }
     ]
