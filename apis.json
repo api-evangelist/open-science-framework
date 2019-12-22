@@ -9,8 +9,8 @@
         "have swagger",
         "service api"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/open-science-framework\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -24,11 +24,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/open-science-framework\/master\/open-science-framework-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/open-science-framework.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/open-science-framework-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/open-science-framework\/master\/open-science-framework-postman-collection.json"
                 }
             ]
         },
@@ -42,17 +46,25 @@
             "properties": [
                 {
                     "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/open-science-framework\/master\/share-api-documentation-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/share-api-documentation.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/share-api-documentation-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/open-science-framework\/master\/share-api-documentation-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Website",
             "url": "https:\/\/cos.io"
