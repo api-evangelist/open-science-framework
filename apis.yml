@@ -33,14 +33,16 @@ x-category: "Science & Math"
 x-tier: 3
 x-tier-reason: bulk-registered-from-public-apis
 tags:
-  - Science And Math
   - Public APIs
   - Research Data
+  - Research Repository
+  - Open Access
+  - Science
+  - Research
 apis:
   - name: Open Science Framework
     description: "Repository and archive for study designs, research materials, data, manuscripts, etc"
     humanURL: https://developer.osf.io
-    baseURL: https://developer.osf.io
     tags:
       - Science And Math
     properties:
@@ -58,3 +60,5 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-tags-removed:
+- Science And Math
